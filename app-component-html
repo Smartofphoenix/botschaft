@@ -1,0 +1,3 @@
+@for (movie of moviesArray; track $index) {
+  <app-movie [movie]="movie"></app-movie>
+}
