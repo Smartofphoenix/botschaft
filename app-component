@@ -1,0 +1,20 @@
+import {Component} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {ApiServiceService} from "./api-service.service";
+import {Movie} from "./Movie";
+import {MovieComponent} from "../movie/movie.component";
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, MovieComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  moviesArray: Movie[] = [];
+
+  constructor(private api_service_service: ApiServiceService) {
+    api_service_service.getAllMovies().subscribe(movies => {this.moviesArray = movies.results});
+  }
+}
