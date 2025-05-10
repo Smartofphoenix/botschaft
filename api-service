@@ -1,0 +1,40 @@
+import { Injectable } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {MovieArrayInterface} from "./MovieArrayInterface";
+import {Character} from "../character";
+import {Movie} from "./Movie";
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ApiServiceService {
+  constructor(private readonly http: HttpClient) {}
+
+  private readonly url = "https://swapi.py4e.com/api/";
+  getRequestsNames = new Map<string, string>();
+
+  getAllMovies() {
+    return this.http.get<MovieArrayInterface>(`${this.url}films`);
+  }
+
+  convertCharacterUrl(url: string) {
+    return this.http.get<Character>(url);
+  }
+
+  getCharacterNames(movie: Movie) {
+    let characterNames = [];
+
+    for (let item of movie.characters) {
+      if (this.getRequestsNames.has(item)) {
+        characterNames.push(<string>this.getRequestsNames.get(item));
+        continue;
+      }
+      this.convertCharacterUrl(item).subscribe(character => {
+        characterNames.push(character.name);
+        this.getRequestsNames.set(item, character.name);
+      });
+    }
+    return characterNames;
+  }
+
+}
