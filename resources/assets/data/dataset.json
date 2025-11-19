@@ -1,0 +1,58 @@
+[
+  {
+    "acronym": "REFR",
+    "firstname": "Franz",
+    "lastname": "Reichel",
+    "image_url": "https://www.htlstp.ac.at/wp-content/uploads/2024/08/refr.jpeg",
+    "subjects": ["POS1", "POS2", "POS3", "POS4", "POS5", "WMC4", "DBI2", "DSAI4", "SYP5"]
+  },
+  {
+    "acronym": "GITS",
+    "firstname": "Werner",
+    "lastname": "Gitschthaler",
+    "image_url": "https://www.htlstp.ac.at/wp-content/uploads/2024/08/gits.jpeg",
+    "subjects": ["POS1", "POS2", "POS3", "POS4", "POS5", "WMC2", "WMC3", "WMC5", "CAPS", "SYP5"]
+  },
+  {
+    "acronym": "MAUS",
+    "firstname": "Franz",
+    "lastname": "Mauss",
+    "image_url": "https://www.htlstp.ac.at/wp-content/uploads/2024/08/maus.jpeg",
+    "subjects": ["POS1", "POS2", "POS3", "AM", "NW2", "SOPK"]
+  },
+  {
+    "acronym": "BUCH",
+    "firstname": "Sandra",
+    "lastname": "Buchner",
+    "image_url": "https://www.htlstp.ac.at/wp-content/uploads/2024/08/buch.jpeg",
+    "subjects": ["BWM1", "BWM2", "BWM3", "INFI", "DBI1", "SYP1", "SOPK"]
+  },
+  {
+    "acronym": "HAMM",
+    "firstname": "Konrad",
+    "lastname": "Hammerl",
+    "image_url": "https://www.htlstp.ac.at/wp-content/uploads/2024/08/hamm.jpeg",
+    "subjects": ["DBI3", "DBI4", "DBI5", "SYP5"]
+  },
+  {
+    "acronym": "SCRE",
+    "firstname": "Christoph",
+    "lastname": "Schreiber",
+    "image_url": "https://www.htlstp.ac.at/wp-content/uploads/2024/08/SCRE.jpeg",
+    "subjects": ["POS1", "POS2", "POS3", "POS4", "POS5", "WMC2" ,"WMC3", "WMC5", "DSAI4", "DSAI5", "SYP5"]
+  },
+  {
+    "acronym": "SCSI",
+    "firstname": "Sigfried",
+    "lastname": "Schweigl",
+    "image_url": "https://www.htlstp.ac.at/wp-content/uploads/2024/08/scsi.jpeg",
+    "subjects": ["POS1", "POS2", "POS3", "DBI3"]
+  },
+  {
+    "acronym": "KERN",
+    "firstname": "Evelyne",
+    "lastname": "Kern",
+    "image_url": "https://www.htlstp.ac.at/wp-content/uploads/2024/08/kern.jpeg",
+    "subjects": ["POS1", "UIUX"]
+  }
+]
